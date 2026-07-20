@@ -1,0 +1,9 @@
+# Raw My Maps exports — working files, not needed by the live site
+*.kml
+*.kmz
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

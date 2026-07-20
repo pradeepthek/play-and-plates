@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Play & Plates — Kid-Friendly Restaurants with Playgrounds in Switzerland</title>
+<meta name="description" content="A curated map of restaurants across Switzerland with playgrounds or play areas for kids. Find family-friendly places to eat near you.">
+
+<!-- ============================================================
+     GOOGLE ANALYTICS (GA4)
+     1. Create a GA4 property at analytics.google.com for this site
+     2. Replace G-XXXXXXXXXX below with your real Measurement ID
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Leaflet (map library) + OpenStreetMap tiles — free, no API key -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="logo">🛝 Play &amp; Plates</div>
+    <nav>
+      <a href="#map">Map</a>
+      <a href="#about">About</a>
+      <a href="#suggest">Suggest a place</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Kid-friendly restaurants with playgrounds, all across Switzerland</h1>
+    <p>A curated map for parents who want to eat well while the kids run around. Find restaurants and cafés with an on-site playground or play area, canton by canton.</p>
+    <a href="#map" class="btn">See the map</a>
+  </div>
+</section>
+
+<section id="map" class="map-section">
+  <div class="wrap">
+    <h2>The map</h2>
+    <p>Tap a pin to see restaurant details. Or search a town and a radius to narrow it down.</p>
+
+    <form id="filter-form" class="filter-bar">
+      <label class="filter-field">
+        <span>Location</span>
+        <input id="location-input" type="text" placeholder="e.g. Zurich, Bern, Lausanne" autocomplete="off">
+      </label>
+      <label class="filter-field filter-field--radius">
+        <span>Radius</span>
+        <select id="radius-input">
+          <option value="5">5 km</option>
+          <option value="10" selected>10 km</option>
+          <option value="25">25 km</option>
+          <option value="50">50 km</option>
+          <option value="100">100 km</option>
+        </select>
+      </label>
+      <button type="submit" class="btn btn--small">Filter</button>
+      <button type="button" id="reset-filter" class="btn btn--ghost">Reset</button>
+    </form>
+    <p id="filter-status" class="filter-status" aria-live="polite"></p>
+
+    <div class="map-embed">
+      <div id="leaflet-map"></div>
+    </div>
+    <p id="result-count" class="result-count"></p>
+  </div>
+</section>
+
+<script src="map.js"></script>
+
+<section id="about" class="about-section">
+  <div class="wrap">
+    <h2>What this is</h2>
+    <p>Every pin on the map is a restaurant or café in Switzerland with a playground, play area, or dedicated kids' corner. Whether it's a full outdoor playground, an indoor play corner, or just a sandbox by the terrace, it's marked so you know what to expect before you go.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Curated, not crowdsourced noise</h3>
+        <p>Every listing is checked before it's added to the map.</p>
+      </div>
+      <div class="card">
+        <h3>Covers all cantons</h3>
+        <p>From Zurich to Geneva, Bern to Ticino — growing every month.</p>
+      </div>
+      <div class="card">
+        <h3>Made by a parent, for parents</h3>
+        <p>Built because finding these places used to mean asking around every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="suggest" class="suggest-section">
+  <div class="wrap">
+    <h2>Know a place that should be on here?</h2>
+    <p>Send the restaurant name, town/canton, and a quick note about the play area to:</p>
+    <p class="email">p4pradeep@hotmail.com</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Play &amp; Plates — a small, independent project. Not affiliated with any restaurant listed.</p>
+  </div>
+</footer>
+
+</body>
+</html>
