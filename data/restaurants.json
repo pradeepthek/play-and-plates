@@ -1,0 +1,996 @@
+[
+  {
+    "name": "Restaurant Schwarzenbach",
+    "lat": 46.9385301,
+    "lng": 8.8349992,
+    "canton": "",
+    "notes": "Gokart, Trampolin, Hüpfburg"
+  },
+  {
+    "name": "Restaurant Adlisberg",
+    "lat": 47.3749686,
+    "lng": 8.5822664,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Portofino",
+    "lat": 47.2940054,
+    "lng": 8.5701257,
+    "canton": "",
+    "notes": "Seesicht"
+  },
+  {
+    "name": "Barbière",
+    "lat": 46.9587219,
+    "lng": 7.4542411,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Dreigänger",
+    "lat": 46.9327863,
+    "lng": 7.4198107,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Petit Couteau",
+    "lat": 46.9454877,
+    "lng": 7.4367017,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Caffè Bar Riva",
+    "lat": 46.9437109,
+    "lng": 7.4640659,
+    "canton": "",
+    "notes": "nahe See, Sandkasten"
+  },
+  {
+    "name": "Fischergut",
+    "lat": 47.5502009,
+    "lng": 8.0896699,
+    "canton": "",
+    "notes": "selber fischen"
+  },
+  {
+    "name": "Pier 17",
+    "lat": 46.730452,
+    "lng": 7.667746,
+    "canton": "",
+    "notes": "nahe See, Sandkasten"
+  },
+  {
+    "name": "Bloomell Coffeehouse Olten",
+    "lat": 47.3474803,
+    "lng": 7.8960508,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant CIS Heimberg",
+    "lat": 46.7922961,
+    "lng": 7.5957044,
+    "canton": "",
+    "notes": "Freizeitanlage"
+  },
+  {
+    "name": "Hotel Kreuz Herzogenbuchsee",
+    "lat": 47.1879606,
+    "lng": 7.7067245,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Restaurant Rössli Säriswil \"Werkstatt der Sinne\"",
+    "lat": 46.9914819,
+    "lng": 7.3335321,
+    "canton": "",
+    "notes": "Tierpark"
+  },
+  {
+    "name": "Bären Langenthal",
+    "lat": 47.2122625,
+    "lng": 7.7894005,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Crêperie Bach & Buck",
+    "lat": 47.1408695,
+    "lng": 7.2452316,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Confiserie Steinmann Uetendorf Filiale Top",
+    "lat": 46.7772303,
+    "lng": 7.5803185,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "KALCHOFEN Restaurant & Hotel",
+    "lat": 47.0166473,
+    "lng": 7.6550612,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Pier 11",
+    "lat": 47.1978978,
+    "lng": 7.5237146,
+    "canton": "",
+    "notes": "Sandkasten, nahe Fluss"
+  },
+  {
+    "name": "Stripped Pizza Seefeld",
+    "lat": 47.360225,
+    "lng": 8.552119,
+    "canton": "",
+    "notes": "nahe See"
+  },
+  {
+    "name": "KANTINE ATTISHOLZ - Events & Locations",
+    "lat": 47.2261945,
+    "lng": 7.578112,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Huusbüffe",
+    "lat": 46.9198612,
+    "lng": 7.437843,
+    "canton": "",
+    "notes": "Park, Miniaturzug, Rodelbahn"
+  },
+  {
+    "name": "Haus Hiltl",
+    "lat": 47.3733026,
+    "lng": 8.5366792,
+    "canton": "",
+    "notes": "Vegetarisch"
+  },
+  {
+    "name": "Restaurant Röschtigrabe",
+    "lat": 46.9477998,
+    "lng": 7.4439185,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Tropenhaus Wolhusen",
+    "lat": 47.0673637,
+    "lng": 8.0823115,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "GnussBistro",
+    "lat": 46.8757239,
+    "lng": 7.5615924,
+    "canton": "",
+    "notes": "Tierpark"
+  },
+  {
+    "name": "Restaurant Schloss Reichenbach",
+    "lat": 46.9905512,
+    "lng": 7.4506046,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Restaurant Sporrer",
+    "lat": 47.5176741,
+    "lng": 8.6916959,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Peter's – Coffee & Kitchen",
+    "lat": 47.5449527,
+    "lng": 7.6023016,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Familien-Bergrestaurant Hannigalp",
+    "lat": 46.2069667,
+    "lng": 7.8671818,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "zum bunten Hund",
+    "lat": 46.7581061,
+    "lng": 7.6305157,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Aktiv Hotel & Spa Hannigalp",
+    "lat": 46.1919831,
+    "lng": 7.8352134,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Rössli Tufertschwil",
+    "lat": 47.3933076,
+    "lng": 9.097249,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Restaurant Park im Grüene",
+    "lat": 47.3003322,
+    "lng": 8.5509654,
+    "canton": "",
+    "notes": "Park"
+  },
+  {
+    "name": "Kinderparadies Sedel Herisau",
+    "lat": 47.3883512,
+    "lng": 9.2974163,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Seegarten (Hotel, Restaurant)",
+    "lat": 47.5214864,
+    "lng": 9.4214643,
+    "canton": "",
+    "notes": "nahe See, Hotel Restaurant"
+  },
+  {
+    "name": "Hotel Hirschen Betriebs AG",
+    "lat": 47.203388,
+    "lng": 9.34974,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Bergrestaurant Alp Egg",
+    "lat": 47.2444548,
+    "lng": 9.0618708,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Achenberg - Bad Zurzach",
+    "lat": 47.5851824,
+    "lng": 8.2754558,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Waldhaus Katzensee",
+    "lat": 47.4291963,
+    "lng": 8.4893963,
+    "canton": "",
+    "notes": "nahe See"
+  },
+  {
+    "name": "Barock Café & Bar",
+    "lat": 47.2061806,
+    "lng": 7.5360761,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Hotel Alpenrose beim Ballenberg",
+    "lat": 46.7544352,
+    "lng": 8.0761444,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Auberge des Vergers",
+    "lat": 46.2321201,
+    "lng": 6.072133,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Bistro Im Guss",
+    "lat": 47.5259084,
+    "lng": 8.5364554,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Sager",
+    "lat": 47.036927,
+    "lng": 8.7770559,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Wirtschaft Ziegelhütte",
+    "lat": 47.3995459,
+    "lng": 8.5726094,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Hupp Lodge",
+    "lat": 47.3966772,
+    "lng": 7.8725999,
+    "canton": "",
+    "notes": "Hotel Restaurant, Sonntagsbrunch"
+  },
+  {
+    "name": "Luna Piccante",
+    "lat": 46.6612222,
+    "lng": 7.8673997,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Gasthof Herrenberg",
+    "lat": 47.380171,
+    "lng": 8.379806,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Erlebnisland Grizzlybär",
+    "lat": 46.754873,
+    "lng": 7.535502,
+    "canton": "",
+    "notes": "Freizeitpark, Tierpark, Minigolf, nahe See"
+  },
+  {
+    "name": "Zur Falkenburg",
+    "lat": 47.4671087,
+    "lng": 9.0501095,
+    "canton": "",
+    "notes": "nahe Teich"
+  },
+  {
+    "name": "Rose",
+    "lat": 47.3332618,
+    "lng": 9.3881917,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Eringer Lodge",
+    "lat": 46.7309892,
+    "lng": 7.3662579,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Uno e più",
+    "lat": 47.0346536,
+    "lng": 8.2740395,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Hecht - chrüz & quer",
+    "lat": 47.3189551,
+    "lng": 8.3713439,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Rüttihubelbad",
+    "lat": 46.9394745,
+    "lng": 7.5981469,
+    "canton": "",
+    "notes": "\"Sensorium\" museum"
+  },
+  {
+    "name": "Gommer Sport GmbH",
+    "lat": 46.506042,
+    "lng": 8.303178,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Café-Bäckerei Zurgilgen AG",
+    "lat": 46.401502,
+    "lng": 8.13374,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Restaurant Schützenhaus",
+    "lat": 47.4003547,
+    "lng": 8.0473553,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Hotel & Restaurant Ermitage Kandersteg",
+    "lat": 46.4974594,
+    "lng": 7.6819874,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Wirtschaft Zihlmann",
+    "lat": 47.5065552,
+    "lng": 7.5278732,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Gasthof Altels Kandergrund",
+    "lat": 46.545199,
+    "lng": 7.661712,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Gasthof Kreuz",
+    "lat": 47.133649,
+    "lng": 7.474942,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Tropenpflanzen-Restaurant Florida",
+    "lat": 47.113684,
+    "lng": 7.3172975,
+    "canton": "",
+    "notes": "Minigolf, nahe Teich"
+  },
+  {
+    "name": "Dorfbeizli",
+    "lat": 47.087049,
+    "lng": 7.468063,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Zur Linde",
+    "lat": 47.0557284,
+    "lng": 7.2615651,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Hotel Frutigresort | family & sport",
+    "lat": 46.5934633,
+    "lng": 7.6545128,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Hotel Allegro",
+    "lat": 47.1324895,
+    "lng": 8.7599866,
+    "canton": "",
+    "notes": "Hotel Restaurant, nahe See"
+  },
+  {
+    "name": "Restaurant im Speck",
+    "lat": 47.3755994,
+    "lng": 8.761925,
+    "canton": "",
+    "notes": "nahe Flugplatz"
+  },
+  {
+    "name": "Rufalipark Obersaxen",
+    "lat": 46.7510929,
+    "lng": 9.120588,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Eichberg",
+    "lat": 47.33905,
+    "lng": 8.205284,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "KASPAR",
+    "lat": 47.0483858,
+    "lng": 8.3063811,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Roggenhausen",
+    "lat": 47.377098,
+    "lng": 8.0301814,
+    "canton": "",
+    "notes": "Wildpark"
+  },
+  {
+    "name": "Restaurant Gnadenthal",
+    "lat": 47.3931686,
+    "lng": 8.3022118,
+    "canton": "",
+    "notes": "Tierpark, nahe Fluss"
+  },
+  {
+    "name": "Restaurant Rütihof, Gränichen",
+    "lat": 47.3399968,
+    "lng": 8.0801439,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Seegarten",
+    "lat": 47.5305969,
+    "lng": 7.6147374,
+    "canton": "",
+    "notes": "Park"
+  },
+  {
+    "name": "Restaurant Botanica",
+    "lat": 47.607891,
+    "lng": 8.543484,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Sonnental",
+    "lat": 47.3958228,
+    "lng": 8.6043247,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Alprestaurant Babental",
+    "lat": 47.7447888,
+    "lng": 8.521753,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant /Besen-Beiz/Besenwirtschaft/Gelegenheitswortschaft/Ausflugsziel",
+    "lat": 47.5654167,
+    "lng": 8.5575936,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Hargarten die Esseria",
+    "lat": 47.3557846,
+    "lng": 9.3546977,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Fork & Bottle",
+    "lat": 47.3522444,
+    "lng": 8.5244,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Kafi für Dich",
+    "lat": 47.3772202,
+    "lng": 8.5230344,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Rauke",
+    "lat": 47.4940571,
+    "lng": 8.7343934,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant & Events @ Quellpark Kundelfingerhof (Betrieb der Kronenhof AG)",
+    "lat": 47.6771212,
+    "lng": 8.7080604,
+    "canton": "",
+    "notes": "Fischen"
+  },
+  {
+    "name": "Erlebnis Waldegg",
+    "lat": 47.4026495,
+    "lng": 9.4105528,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Tibits",
+    "lat": 47.3649874,
+    "lng": 8.5479572,
+    "canton": "",
+    "notes": "nahe See"
+  },
+  {
+    "name": "Restaurant Reiatstube",
+    "lat": 47.7738788,
+    "lng": 8.6586709,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Sagi",
+    "lat": 47.5247365,
+    "lng": 8.8114508,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Stelzenhof",
+    "lat": 47.5817355,
+    "lng": 9.120424,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Stählibuck",
+    "lat": 47.546401,
+    "lng": 8.939726,
+    "canton": "",
+    "notes": "Tierpark"
+  },
+  {
+    "name": "Restaurant Cockpit Birrfeld",
+    "lat": 47.4440021,
+    "lng": 8.2294464,
+    "canton": "",
+    "notes": "nahe Flugplatz"
+  },
+  {
+    "name": "Freihof AG Brauerei & Hofstube",
+    "lat": 47.412667,
+    "lng": 9.240337,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Landgasthof Mühle",
+    "lat": 47.154865,
+    "lng": 9.510715,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Wirtschaft Schönegg",
+    "lat": 47.2353977,
+    "lng": 8.6475971,
+    "canton": "",
+    "notes": "Minigolf"
+  },
+  {
+    "name": "Schnuggebock",
+    "lat": 47.402753,
+    "lng": 9.410586,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Bienenberg",
+    "lat": 47.4953113,
+    "lng": 7.7119782,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Waldgasthaus Baldegg",
+    "lat": 47.4701759,
+    "lng": 8.2796583,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Matti",
+    "lat": 46.6427956,
+    "lng": 8.6068751,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "BEMATO | Buffet | Selbstbedienungsrestaurant",
+    "lat": 46.5934515,
+    "lng": 7.6548056,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Bergwirtschaft Köbelisberg",
+    "lat": 47.3141519,
+    "lng": 9.1092612,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Acla Grischuna",
+    "lat": 46.7217607,
+    "lng": 9.5315543,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Erlebnisrestaurant maro's",
+    "lat": 47.3775771,
+    "lng": 7.94924,
+    "canton": "",
+    "notes": "Tierpark"
+  },
+  {
+    "name": "Kafi Feld",
+    "lat": 47.3274529,
+    "lng": 8.8097899,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Sichternhof",
+    "lat": 47.4814497,
+    "lng": 7.715443,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Gasthaus Linde",
+    "lat": 47.332204,
+    "lng": 8.274131,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Alpwirtschaft Horben",
+    "lat": 47.2194444,
+    "lng": 8.3261111,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Limi - Hütte",
+    "lat": 47.1607644,
+    "lng": 8.4188278,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Guggeien-Höchst",
+    "lat": 47.4495163,
+    "lng": 9.4111199,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Hotel Restaurant Alpenhof",
+    "lat": 46.0234041,
+    "lng": 7.7512862,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Schürlibeiz zum Asperhof",
+    "lat": 47.590036,
+    "lng": 8.74993,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "CHÄRNSMATT – Gasthof & Spielparadies",
+    "lat": 47.1000754,
+    "lng": 8.2687738,
+    "canton": "",
+    "notes": "Gartenbahn"
+  },
+  {
+    "name": "Hotel Kaiserstuhl am Lungernsee",
+    "lat": 46.813497,
+    "lng": 8.175164,
+    "canton": "",
+    "notes": "nahe See"
+  },
+  {
+    "name": "RIO churrasco",
+    "lat": 46.9755484,
+    "lng": 8.3422948,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Hotel & Restaurant Bahnhof Giswil",
+    "lat": 46.8366599,
+    "lng": 8.1858384,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Steakhouse zum Roten Stier",
+    "lat": 46.8352808,
+    "lng": 8.2905193,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Turren",
+    "lat": 46.7889591,
+    "lng": 8.1290502,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Geerlisburg",
+    "lat": 47.4638201,
+    "lng": 8.6123046,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Satriale’s",
+    "lat": 47.1378141,
+    "lng": 7.2478914,
+    "canton": "",
+    "notes": "nahe Fluss"
+  },
+  {
+    "name": "Restaurant Pluspunkt",
+    "lat": 47.000803,
+    "lng": 8.605756,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Grünwald",
+    "lat": 47.4179472,
+    "lng": 8.4825361,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Röstifarm",
+    "lat": 47.4564933,
+    "lng": 8.1310271,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Pizzeria Giardino",
+    "lat": 46.3792172,
+    "lng": 7.6270534,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Trumpf-Buur",
+    "lat": 47.0838933,
+    "lng": 8.3331853,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Jucker Farm AG: Bächlihof",
+    "lat": 47.2198305,
+    "lng": 8.8438777,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Familienrestaurant Brunni-Lodge",
+    "lat": 47.0425261,
+    "lng": 8.7039214,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Bergrestaurant Sattelegg",
+    "lat": 47.127578,
+    "lng": 8.846798,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Tulipan",
+    "lat": 47.1271264,
+    "lng": 8.7498664,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Bergrestaurant Etzel Kulm",
+    "lat": 47.1776208,
+    "lng": 8.7678158,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Dany's Restaurant",
+    "lat": 47.0154198,
+    "lng": 8.6484287,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Grüne Gans",
+    "lat": 47.053065,
+    "lng": 8.55716,
+    "canton": "",
+    "notes": "Tierpark"
+  },
+  {
+    "name": "Restaurant + Hotel Toggenburgerhof",
+    "lat": 47.4098,
+    "lng": 9.03872,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Frohe Aussicht, Winzenberg",
+    "lat": 47.3964133,
+    "lng": 9.1192689,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Restaurant Seehuus",
+    "lat": 47.5368112,
+    "lng": 9.4008571,
+    "canton": "",
+    "notes": "nahe See"
+  },
+  {
+    "name": "Restaurant Berghof Ganterschwil",
+    "lat": 47.3663522,
+    "lng": 9.0918189,
+    "canton": "",
+    "notes": "Trampolin"
+  },
+  {
+    "name": "Krone Mosnang",
+    "lat": 47.3641272,
+    "lng": 9.0411739,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Chlii & Gross Familienoase",
+    "lat": 47.5027726,
+    "lng": 8.7672692,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Landgasthof Seelust",
+    "lat": 47.5352247,
+    "lng": 9.3982557,
+    "canton": "",
+    "notes": "Hotel Restaurant, nahe See"
+  },
+  {
+    "name": "Hotel & Restaurant Nollen",
+    "lat": 47.4926098,
+    "lng": 9.1219356,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Lila Luchs",
+    "lat": 47.2893423,
+    "lng": 7.944673,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "s' Hofkafi",
+    "lat": 47.3149506,
+    "lng": 7.8451861,
+    "canton": "",
+    "notes": ""
+  },
+  {
+    "name": "Gibswilerstube GmbH",
+    "lat": 47.3135536,
+    "lng": 8.914151,
+    "canton": "",
+    "notes": "Hotel Restaurant"
+  },
+  {
+    "name": "Eichhof Hofladen und Cafe",
+    "lat": 47.3951716,
+    "lng": 9.6053254,
+    "canton": "",
+    "notes": "Tiere, Sandkasten"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Restaurant Sonnenberg",
+    "lat": 47.3769,
+    "lng": 8.5417,
+    "canton": "Zurich",
+    "notes": "Outdoor playground with slide and sandbox, terrace seating."
+  },
+  {
+    "name": "Cafe Baerengraben",
+    "lat": 46.9481,
+    "lng": 7.4474,
+    "canton": "Bern",
+    "notes": "Small indoor play corner, close to the Bear Park."
+  },
+  {
+    "name": "Gasthaus Lindenhof",
+    "lat": 47.0502,
+    "lng": 8.3093,
+    "canton": "Lucerne",
+    "notes": "Large outdoor playground, lake view terrace."
+  },
+  {
+    "name": "Ristorante Lago",
+    "lat": 46.0037,
+    "lng": 8.9511,
+    "canton": "Ticino",
+    "notes": "Playground by the lakeside garden."
+  },
+  {
+    "name": "Restaurant Rhonetal",
+    "lat": 46.2276,
+    "lng": 7.3606,
+    "canton": "Valais",
+    "notes": "Fenced play area, good for toddlers."
+  },
+  {
+    "name": "Brasserie Jardin",
+    "lat": 46.2044,
+    "lng": 6.1432,
+    "canton": "Geneva",
+    "notes": "Small garden play corner, close to the park."
+  }
+]
