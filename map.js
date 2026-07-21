@@ -52,7 +52,11 @@ function initMap() {
 }
 
 function googleMapsUrl(r) {
-  return `https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}`;
+  // Google's own "place" URL pattern (same shape it generates when you share a
+  // place): shows the restaurant name as the label, anchored to exact coordinates,
+  // instead of a bare "lat,lng" pin with no name.
+  const name = encodeURIComponent(r.name).replace(/%20/g, "+");
+  return `https://www.google.com/maps/place/${name}/@${r.lat},${r.lng},17z`;
 }
 
 function appleMapsUrl(r) {
