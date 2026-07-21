@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Play & Plates — Add postcode/town to restaurants.json</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #24201c; }
+  h1 { font-size: 1.4rem; }
+  button { background: #d1332f; color: #fff; border: none; padding: 10px 22px; border-radius: 999px; font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  button:disabled { background: #ccc; cursor: not-allowed; }
+  #log { background: #f7f2ec; border: 1px solid #eee0d3; border-radius: 8px; padding: 12px; height: 320px; overflow-y: auto; font-family: monospace; font-size: 0.82rem; white-space: pre-wrap; margin-top: 16px; }
+  input[type=file] { margin: 12px 0; }
+  .status { margin-top: 10px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>Add postcode + town to restaurants.json</h1>
+<p>This runs entirely in your browser. It reads your current <code>restaurants.json</code>, looks up the postcode and town for each restaurant's coordinates using OpenStreetMap's free Nominatim service (one request per second, same service your site's location filter already uses), and lets you download the updated file when done. Takes about 2&ndash;3 minutes for 142 restaurants.</p>
+
+<input type="file" id="file-input" accept="application/json">
+<br>
+<button id="start-btn" disabled>Start enrichment</button>
+<button id="download-btn" disabled>Download enriched restaurants.json</button>
+
+<div class="status" id="status"></div>
+<div id="log"></div>
+
+<script>
+let restaurants = null;
+
+const fileInput = document.getElementById("file-input");
+const startBtn = document.getElementById("start-btn");
+const downloadBtn = document.getElementById("download-btn");
+const statusEl = document.getElementById("status");
+const logEl = document.getElementById("log");
+
+function log(msg) {
+  logEl.textContent += msg + "\n";
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+fileInput.addEventListener("change", async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const text = await file.text();
+  restaurants = JSON.parse(text);
+  log(`Loaded ${restaurants.length} restaurants from ${file.name}`);
+  startBtn.disabled = false;
+});
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function reverseGeocode(lat, lng) {
+  const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=16&addressdetails=1`;
+  const res = await fetch(url);
+  const data = await res.json();
+  const addr = data.address || {};
+  const postcode = addr.postcode || "";
+  const town = addr.town || addr.city || addr.village || addr.municipality || addr.suburb || "";
+  return { postcode, town };
+}
+
+startBtn.addEventListener("click", async () => {
+  startBtn.disabled = true;
+  fileInput.disabled = true;
+  let updated = 0;
+  const total = restaurants.length;
+
+  for (let i = 0; i < total; i++) {
+    const r = restaurants[i];
+    if (r.postcode && r.town) {
+      continue; // already enriched
+    }
+    statusEl.textContent = `Processing ${i + 1} / ${total}...`;
+    try {
+      const { postcode, town } = await reverseGeocode(r.lat, r.lng);
+      r.postcode = postcode;
+      r.town = town;
+      updated++;
+      log(`[${i + 1}/${total}] ${r.name} -> ${postcode} ${town}`);
+    } catch (err) {
+      log(`[${i + 1}/${total}] ${r.name} -> FAILED (${err})`);
+    }
+    await sleep(1000); // respect Nominatim's 1 request/second limit
+  }
+
+  statusEl.textContent = `Done. Updated ${updated} of ${total}.`;
+  downloadBtn.disabled = false;
+});
+
+downloadBtn.addEventListener("click", () => {
+  const blob = new Blob([JSON.stringify(restaurants, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "restaurants.json";
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+
+</body>
+</html>

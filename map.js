@@ -38,14 +38,53 @@ function initMap() {
   }).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
+
+  // Fire a GA4 event whenever someone clicks an "Open in Google/Apple Maps" link
+  map.on("popupopen", (e) => {
+    const node = e.popup.getElement();
+    if (!node) return;
+    node.querySelectorAll(".popup-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        trackMapOpen(link.dataset.provider, link.dataset.name);
+      });
+    });
+  });
+}
+
+function googleMapsUrl(r) {
+  return `https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}`;
+}
+
+function appleMapsUrl(r) {
+  return `https://maps.apple.com/?ll=${r.lat},${r.lng}&q=${encodeURIComponent(r.name)}`;
+}
+
+function trackMapOpen(provider, restaurantName) {
+  if (typeof gtag === "function") {
+    gtag("event", "open_in_maps", {
+      map_provider: provider,
+      restaurant_name: restaurantName,
+    });
+  }
 }
 
 function renderMarkers(list) {
   markersLayer.clearLayers();
   list.forEach((r) => {
     const lines = [`<strong>${escapeHtml(r.name)}</strong>`];
-    if (r.canton) lines.push(escapeHtml(r.canton));
+    const placeLine = [r.postcode, r.town].filter(Boolean).join(" ");
+    if (placeLine) lines.push(escapeHtml(placeLine));
+    else if (r.canton) lines.push(escapeHtml(r.canton));
     if (r.notes) lines.push(escapeHtml(r.notes));
+
+    const nameAttr = escapeHtml(r.name).replace(/"/g, "&quot;");
+    lines.push(
+      `<div class="popup-links">` +
+        `<a href="${googleMapsUrl(r)}" target="_blank" rel="noopener" class="popup-link" data-provider="google" data-name="${nameAttr}">Open in Google Maps</a>` +
+        `<a href="${appleMapsUrl(r)}" target="_blank" rel="noopener" class="popup-link" data-provider="apple" data-name="${nameAttr}">Open in Apple Maps</a>` +
+        `</div>`
+    );
+
     const marker = L.marker([r.lat, r.lng]).bindPopup(lines.join("<br>"));
     markersLayer.addLayer(marker);
   });

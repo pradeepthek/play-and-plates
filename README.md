@@ -64,6 +64,27 @@ To publish your real list:
 Repeat steps 1–4 any time you add or remove restaurants — My Maps stays your editing tool,
 this script is just the bridge to the live filterable map.
 
+### Adding new restaurants later
+
+Editing My Maps by itself does **not** update the live site — the site reads from the
+static `data/restaurants.json` committed to the repo, so new pins need to flow through
+the pipeline once more:
+
+1. Add the new restaurant(s) in My Maps as usual.
+2. Export to KML/KMZ again (same as step 2 above — always export the whole map, not just
+   the new pins).
+3. Run `kml_to_json.py` again, pointing at your **existing** `data/restaurants.json` as the
+   output path. It merges rather than overwrites: restaurants that already existed keep
+   their postcode/town/etc., and only genuinely new ones come through without that data.
+   The script prints how many matched vs. how many are new, so you can tell at a glance.
+4. Run `enrich_locations.html` again on the merged file — it skips anything that already
+   has postcode + town, so it only processes the new entries (fast, even if the list has
+   grown a lot).
+5. Copy the updated `restaurants.json` into your local repo folder, commit, push.
+
+Note: renaming a restaurant in My Maps makes the merge treat it as a new entry (matching
+is by exact name), so it'll temporarily lose its enrichment data until you re-run step 4.
+
 ## Deploying to Netlify
 
 ### Option A — GitHub (recommended, auto-deploys on push)
