@@ -52,11 +52,14 @@ function initMap() {
 }
 
 function googleMapsUrl(r) {
-  // Google's own "place" URL pattern (same shape it generates when you share a
-  // place): shows the restaurant name as the label, anchored to exact coordinates,
-  // instead of a bare "lat,lng" pin with no name.
-  const name = encodeURIComponent(r.name).replace(/%20/g, "+");
-  return `https://www.google.com/maps/place/${name}/@${r.lat},${r.lng},17z`;
+  // Google's officially documented, cross-platform Maps URL format (works
+  // consistently in browsers AND mobile app deep-linking, unlike the "/place/name/@lat,lng"
+  // share-link shape, which isn't part of the documented API and can misfire on mobile).
+  // https://developers.google.com/maps/documentation/urls/get-started
+  // "query" only supports text OR coordinates, not both — so we use name + town/Switzerland
+  // as search text to disambiguate, rather than raw coordinates with no label.
+  const place = r.town ? `${r.name}, ${r.town}` : `${r.name}, Switzerland`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place)}`;
 }
 
 function appleMapsUrl(r) {
