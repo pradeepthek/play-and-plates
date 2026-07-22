@@ -104,8 +104,32 @@
 <section id="suggest" class="suggest-section">
   <div class="wrap">
     <h2>Know a place that should be on here?</h2>
-    <p>Send the restaurant name, town/canton, and a quick note about the play area to:</p>
-    <p class="email">p4pradeep@hotmail.com</p>
+    <p>Tell us the restaurant name, town/canton, and a quick note about the play area — we'll check it out and add it.</p>
+
+    <form id="suggest-form" name="suggest-restaurant" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="suggest-form">
+      <input type="hidden" name="form-name" value="suggest-restaurant">
+      <p class="hidden-field"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+
+      <label class="suggest-field">
+        <span>Restaurant name *</span>
+        <input type="text" name="restaurant_name" required>
+      </label>
+      <label class="suggest-field">
+        <span>Town / canton *</span>
+        <input type="text" name="town_canton" required>
+      </label>
+      <label class="suggest-field">
+        <span>About the play area</span>
+        <textarea name="play_area_notes" rows="3" placeholder="e.g. outdoor playground, fenced, indoor corner..."></textarea>
+      </label>
+      <label class="suggest-field">
+        <span>Your email (optional, in case we have a question)</span>
+        <input type="email" name="submitter_email">
+      </label>
+
+      <button type="submit" class="btn btn--small">Send suggestion</button>
+      <p id="suggest-status" class="filter-status" aria-live="polite"></p>
+    </form>
   </div>
 </section>
 

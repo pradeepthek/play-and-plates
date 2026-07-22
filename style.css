@@ -191,10 +191,36 @@ a { color: var(--red); }
 .suggest-section {
   text-align: center;
 }
-.suggest-section .email {
-  font-weight: 600;
-  color: var(--red);
-  font-size: 1.1rem;
+
+.suggest-form {
+  text-align: left;
+  max-width: 480px;
+  margin: 24px auto 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+}
+.suggest-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.suggest-field input,
+.suggest-field textarea {
+  font-size: 0.95rem;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  color: var(--ink);
+}
+.hidden-field {
+  position: absolute;
+  left: -9999px;
 }
 
 .site-footer {

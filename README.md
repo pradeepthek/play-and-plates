@@ -15,7 +15,11 @@ A filterable map of restaurants with playgrounds across Switzerland.
    - Add a Web data stream for your final domain, copy the Measurement ID (`G-XXXXXXXXXX`).
    - In `index.html`, replace both occurrences of `G-XXXXXXXXXX` in the `<head>` with your real ID.
 
-2. **Update the contact email** in the "Suggest a place" section of `index.html` if you want a different inbox than `p4pradeep@hotmail.com`.
+2. **Suggestion form email notifications** — the "Suggest a place" section is a Netlify
+   Form (no email address published on the page). Once the site is deployed on Netlify:
+   Site settings → Forms → Form notifications → Add notification → Email notification →
+   enter the inbox you want submissions sent to. This only works on Netlify, not on
+   GitHub Pages (GitHub Pages has no form backend, so the form won't submit there).
 
 ## Keeping the restaurant list up to date
 

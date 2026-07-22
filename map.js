@@ -190,6 +190,36 @@ async function handleFilterSubmit(e) {
   }
 }
 
+function initSuggestForm() {
+  const form = document.getElementById("suggest-form");
+  if (!form) return;
+  const statusEl = document.getElementById("suggest-status");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    statusEl.textContent = "Sending…";
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+
+    try {
+      const formData = new URLSearchParams(new FormData(form)).toString();
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formData,
+      });
+      if (!res.ok) throw new Error("Form submission failed");
+      statusEl.textContent = "Thanks! We'll take a look and add it if it's a good fit.";
+      form.reset();
+    } catch (err) {
+      statusEl.textContent =
+        "Something went wrong sending that — please try again, or check back shortly.";
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+}
+
 async function main() {
   initMap();
   allRestaurants = await loadData();
@@ -201,6 +231,8 @@ async function main() {
   document
     .getElementById("reset-filter")
     .addEventListener("click", resetFilter);
+
+  initSuggestForm();
 }
 
 document.addEventListener("DOMContentLoaded", main);
