@@ -380,7 +380,7 @@
   {
     "name": "Bistro Im Guss",
     "lat": 47.5259084,
-    "lng": 8.5364554,
+    "lng": 8.5364232,
     "canton": "",
     "notes": "",
     "postcode": "8180",
@@ -415,8 +415,8 @@
   },
   {
     "name": "Luna Piccante",
-    "lat": 46.6612222,
-    "lng": 7.8673997,
+    "lat": 46.6612885,
+    "lng": 7.8673407,
     "canton": "",
     "notes": "",
     "postcode": "3812",
@@ -856,8 +856,8 @@
   },
   {
     "name": "Restaurant Bienenberg",
-    "lat": 47.4953113,
-    "lng": 7.7119782,
+    "lat": 47.4953258,
+    "lng": 7.7119192,
     "canton": "",
     "notes": "Hotel Restaurant",
     "postcode": "4410",
@@ -928,8 +928,8 @@
   },
   {
     "name": "Restaurant Sichternhof",
-    "lat": 47.4814497,
-    "lng": 7.715443,
+    "lat": 47.4815041,
+    "lng": 7.7153894,
     "canton": "",
     "notes": "",
     "postcode": "4410",
@@ -1009,8 +1009,8 @@
   },
   {
     "name": "RIO churrasco",
-    "lat": 46.9755484,
-    "lng": 8.3422948,
+    "lat": 46.9756216,
+    "lng": 8.3422572,
     "canton": "",
     "notes": "",
     "postcode": "6362",
@@ -1048,7 +1048,7 @@
     "lat": 47.4638201,
     "lng": 8.6123046,
     "canton": "",
-    "notes": "",
+    "notes": "Brunch",
     "postcode": "8302",
     "town": "Kloten"
   },
@@ -1276,5 +1276,77 @@
     "notes": "Tiere, Sandkasten",
     "postcode": "9436",
     "town": "Balgach"
+  },
+  {
+    "name": "Gasthof Löwen Worb (Casa Nostra und Indiana) Hotel & Restaurant",
+    "lat": 46.9304877,
+    "lng": 7.5634488,
+    "canton": "",
+    "notes": "",
+    "postcode": "3076",
+    "town": "Worb"
+  },
+  {
+    "name": "Restaurant Alpenhof",
+    "lat": 47.0768241,
+    "lng": 8.4475292,
+    "canton": "",
+    "notes": "Trampolin",
+    "postcode": "6403",
+    "town": "Küssnacht am Rigi"
+  },
+  {
+    "name": "Gasthaus zum Weissen Kreuz",
+    "lat": 47.1742172,
+    "lng": 8.3542737,
+    "canton": "",
+    "notes": "Sandkasten",
+    "postcode": "5646",
+    "town": "Abtwil"
+  },
+  {
+    "name": "Restaurant & Hotel Roggerli",
+    "lat": 46.9863655,
+    "lng": 8.3068582,
+    "canton": "",
+    "notes": "Hotel restaurant, nahe See",
+    "postcode": "6052",
+    "town": "Hergiswil (NW)"
+  },
+  {
+    "name": "Allmendhuisli",
+    "lat": 46.9681265,
+    "lng": 8.3817834,
+    "canton": "",
+    "notes": "",
+    "postcode": "6370",
+    "town": "Stans"
+  },
+  {
+    "name": "Schwanen Allenlüften",
+    "lat": 46.9462606,
+    "lng": 7.2725402,
+    "canton": "",
+    "notes": "",
+    "postcode": "3205",
+    "town": "Buttenried"
+  },
+  {
+    "name": "Restaurant Pizzeria Landhaus",
+    "lat": 46.6821222,
+    "lng": 7.8132836,
+    "canton": "",
+    "notes": "Seesicht",
+    "postcode": "3707",
+    "town": "Unterseen"
+  },
+  {
+    "name": "Landgasthof Hard",
+    "lat": 47.4495054,
+    "lng": 7.8070799,
+    "canton": "",
+    "notes": "",
+    "postcode": "4455",
+    "town": "Zunzgen"
   }
 ]
