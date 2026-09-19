@@ -8,6 +8,9 @@ const DATA_URL_PRIMARY = "data/restaurants.json";
 const DATA_URL_FALLBACK = "data/restaurants.sample.json";
 const SWITZERLAND_CENTER = [46.8182, 8.2275];
 const DEFAULT_ZOOM = 8;
+const DEFAULT_RADIUS_KM = 10;
+const LOCATION_CACHE_KEY = "playandplates_last_location";
+const LOCATION_CACHE_MAX_AGE_MS = 30 * 60 * 1000; // 30 minutes
 
 let map;
 let markersLayer;
@@ -131,6 +134,81 @@ async function geocodeLocation(query) {
   return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon), label: data[0].display_name };
 }
 
+async function reverseGeocodeLabel(lat, lng) {
+  // Best-effort only — used to fill the location input with a readable town
+  // name after auto-locating. If it fails, we just leave the input blank;
+  // the map/filter itself doesn't depend on this succeeding.
+  try {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=12&addressdetails=1`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const addr = data.address || {};
+    return addr.town || addr.city || addr.village || addr.municipality || addr.suburb || "";
+  } catch (e) {
+    return "";
+  }
+}
+
+function getCachedLocation() {
+  try {
+    const raw = localStorage.getItem(LOCATION_CACHE_KEY);
+    if (!raw) return null;
+    const cached = JSON.parse(raw);
+    if (Date.now() - cached.ts > LOCATION_CACHE_MAX_AGE_MS) return null;
+    return cached;
+  } catch (e) {
+    return null;
+  }
+}
+
+function setCachedLocation(lat, lng) {
+  try {
+    localStorage.setItem(LOCATION_CACHE_KEY, JSON.stringify({ lat, lng, ts: Date.now() }));
+  } catch (e) {
+    // localStorage unavailable (private browsing, etc.) — fine, just skip caching
+  }
+}
+
+async function applyAutoLocation(lat, lng, fromCache) {
+  const radiusInput = document.getElementById("radius-input");
+  const locationInput = document.getElementById("location-input");
+  const statusEl = document.getElementById("filter-status");
+
+  radiusInput.value = String(DEFAULT_RADIUS_KM);
+  applyRadiusFilter({ lat, lng }, DEFAULT_RADIUS_KM);
+  statusEl.textContent = `Within ${DEFAULT_RADIUS_KM} km of your location`;
+
+  const town = await reverseGeocodeLabel(lat, lng);
+  if (town) {
+    locationInput.value = town;
+    statusEl.textContent = `Within ${DEFAULT_RADIUS_KM} km of ${town}`;
+  }
+
+  if (!fromCache) setCachedLocation(lat, lng);
+}
+
+function tryAutoLocateUser() {
+  // Show a cached location instantly if we have one (from a previous visit),
+  // then quietly refresh with a live position in the background.
+  const cached = getCachedLocation();
+  if (cached) {
+    applyAutoLocation(cached.lat, cached.lng, true);
+  }
+
+  if (!navigator.geolocation) return;
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      applyAutoLocation(position.coords.latitude, position.coords.longitude, false);
+    },
+    () => {
+      // Permission denied, timed out, or unavailable — silently keep whatever
+      // is already showing (cached location, or the default full-Switzerland view).
+    },
+    { timeout: 8000, maximumAge: 5 * 60 * 1000 }
+  );
+}
+
 function applyRadiusFilter(center, radiusKm) {
   const filtered = allRestaurants.filter(
     (r) => haversineKm(center.lat, center.lng, r.lat, r.lng) <= radiusKm
@@ -233,6 +311,8 @@ async function main() {
     .addEventListener("click", resetFilter);
 
   initSuggestForm();
+
+  tryAutoLocateUser();
 }
 
 document.addEventListener("DOMContentLoaded", main);
